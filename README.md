@@ -1,16 +1,12 @@
 # Youtube Comments Analyzer
 ### Youtube comments topics modeling and sentiment analyzer
 
-Sentiment is a Node.js module that uses the [AFINN-165](http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010) wordlist and [Emoji Sentiment Ranking](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0144296) to perform [sentiment analysis](http://en.wikipedia.org/wiki/Sentiment_analysis) on arbitrary blocks of input text. Sentiment provides several things:
-
-- Performance (see benchmarks below)
-- The ability to append and overwrite word / value pairs from the AFINN wordlist
-- The ability to easily add support for new languages
-- The ability to easily define custom strategies for negation, emphasis, etc. on a per-language basis
+Youtube Comments Analyzer is a Python scripted tool to collect and analyze Youtube's videos comments (in Arabic). Tool provides the service of sentiment analysis and topics modeling based on arguments submitted by user. 
 
 ## Table of contents
 
 - [Installation](#installation)
+- [Requirements](#requirements)
 - [Usage example](#usage-example)
 - [Adding new languages](#adding-new-languages)
 - [Adding and overwriting words](#adding-and-overwriting-words)
@@ -21,9 +17,16 @@ Sentiment is a Node.js module that uses the [AFINN-165](http://www2.imm.dtu.dk/p
 - [Testing](#testing)
 
 ## Installation
-```bash
-npm install sentiment
-```
+Visit https://github.com/arghodayah/Youtube-Comments-Analyzer/archive/master.zip and download all files to your directory.
+
+## Requirements
+many_stop_words==0.2.2
+httplib2==0.11.3
+gensim==3.4.0
+Flask==1.0.2
+nltk==3.2.5
+pymongo==3.6.1
+google_api_python_client==1.6.7
 
 ## Usage example
 ```js
