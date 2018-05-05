@@ -71,9 +71,4 @@ Example Respone:
 ```
 
 ## Validation
-While the accuracy provided by AFINN is quite good considering it's computational performance (see above) there is always room for improvement. Therefore the `sentiment` module is open to accepting PRs which modify or amend the AFINN / Emoji datasets or implementation given that they improve accuracy and maintain similar performance characteristics. In order to establish this, we test the `sentiment` module against [three labelled datasets provided by UCI](https://archive.ics.uci.edu/ml/datasets/Sentiment+Labelled+Sentences).
-
-To run the validation tests yourself:
-```bash
-npm run test:validate
-```
+While the accuracy is considered low because of dialect languages there is always a room for improvement. Therefore you can always add new positive and negative labeled data to pos.txt and neg.txt files respectively in order to improve results and cover more dialect phrases and words.
