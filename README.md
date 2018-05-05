@@ -29,10 +29,10 @@ Visit https://github.com/arghodayah/Youtube-Comments-Analyzer/archive/master.zip
 - google_api_python_client==1.6.7
 
 ## Usage example
-Usage: analyze.py Tool Arg1 Arg2
-Tool: 'topics' or 'sentiment'
-Arg1: topics=>Quantity of topics, sentiment=>'video' or 'text'
-Arg2: topics=>Videos IDs seperated by commas(,), sentiment=>Video ID or Text
+*Usage: analyze.py Tool Arg1 Arg2
+*Tool: 'topics' or 'sentiment'
+*Arg1: topics=>Quantity of topics, sentiment=>'video' or 'text'
+*Arg2: topics=>Videos IDs seperated by commas(,), sentiment=>Video ID or Text
 
 - Comments Topics Modeling (Supports multiple videos)
 ```bash
