@@ -1,7 +1,7 @@
 # Youtube Comments Analyzer
 ### Youtube comments topics modeling and sentiment analyzer
 
-Youtube Comments Analyzer is a Python scripted tool to collect and analyze Youtube's videos comments (in Arabic). Tool provides the service of sentiment analysis and topics modeling based on arguments submitted by user. All fetched comments are saved in a MongoDB named "yt" inside collection named "comments".
+Youtube Comments Analyzer is a Python scripted tool to collect and analyze Youtube's videos comments (in Arabic). Tool provides the service of sentiment analysis and topics modeling based on arguments submitted by user. All fetched comments are saved in a MongoDB named "yt" inside a collection named "comments".
 
 Sentiment analyzer is being trained using 1000 positive-labeled and another 1000 negative-labeled tweets with accuracy of ~88% based on 80% training and 20% test sets. Accuracy may found lower with text and comments analysis as a result of dialect phrases.
 
