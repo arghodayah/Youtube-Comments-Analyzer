@@ -3,6 +3,8 @@
 
 Youtube Comments Analyzer is a Python scripted tool to collect and analyze Youtube's videos comments (in Arabic). Tool provides the service of sentiment analysis and topics modeling based on arguments submitted by user. 
 
+Sentiment analyzer is being trained using 1000 positive-labeled and another 1000 negative-labeled tweets with accuracy of ~88% based on 80% training and 20% test sets. Accuracy may found lower with text and comments analysis as a result of dialect phrases.
+
 ## Table of contents
 
 - [Installation](#installation)
@@ -57,17 +59,15 @@ python3 analyze.py sentiment scores
 ```bash
 python3 websentiment.py
 ```
-## Adding new languages
-You can add support for a new language by registering it using the `registerLanguage` method:
+## Web Endpoint
+You can start a web endpoint for the sentiment analyzer (text only) by running the following in your terminal:
 
-```js
-var frLanguage = {
-  labels: { 'stupide': -2 }
-};
-sentiment.registerLanguage('fr', frLanguage);
-
-var result = sentiment.analyze('Le chat est stupide.', { language: 'fr' });
-console.dir(result);    // Score: -2, Comparative: -0.5
+```bash
+python3 websentiment.py
+```
+The terminal will show you an IP address followed by a port number that you can follow and submit your text to. Example:
+```bash
+http://100.101.102.103:5000/?text=أنا مسرور جداً
 ```
 
 You can also define custom scoring strategies to handle things like negation and emphasis on a per-language basis:
