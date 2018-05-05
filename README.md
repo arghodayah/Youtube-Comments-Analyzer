@@ -20,13 +20,13 @@ Youtube Comments Analyzer is a Python scripted tool to collect and analyze Youtu
 Visit https://github.com/arghodayah/Youtube-Comments-Analyzer/archive/master.zip and download all files to your directory.
 
 ## Requirements
-many_stop_words==0.2.2
-httplib2==0.11.3
-gensim==3.4.0
-Flask==1.0.2
-nltk==3.2.5
-pymongo==3.6.1
-google_api_python_client==1.6.7
+- many_stop_words==0.2.2
+- httplib2==0.11.3
+- gensim==3.4.0
+- Flask==1.0.2 (For web endpoint only)
+- nltk==3.2.5
+- pymongo==3.6.1
+- google_api_python_client==1.6.7
 
 ## Usage example
 ```js
