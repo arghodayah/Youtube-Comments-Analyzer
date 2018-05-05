@@ -29,13 +29,30 @@ Visit https://github.com/arghodayah/Youtube-Comments-Analyzer/archive/master.zip
 - google_api_python_client==1.6.7
 
 ## Usage example
-```js
-var Sentiment = require('sentiment');
-var sentiment = new Sentiment();
-var result = sentiment.analyze('Cats are stupid.');
-console.dir(result);    // Score: -2, Comparative: -0.666
+Usage: analyze.py Tool Arg1 Arg2
+       Tool: 'topics' or 'sentiment'
+       Arg1: topics=>Quantity of topics, sentiment=>'video' or 'text'
+       Arg2: topics=>Videos IDs seperated by commas(,), sentiment=>Video ID or Text
+- Comments Topics Modeling (Supports multiple videos)
+```bash
+python3 analyze.py topics <number of topics> <Youtube videos IDs separated by commas(,)>
 ```
-
+- Comments Sentiment Analysis (Single video)
+```bash
+python3 analyze.py sentiment video <Youtube video ID>
+```
+- Text Sentiment Analysis
+```bash
+python3 analyze.py sentiment text '<Your text>'
+```
+- Sentiment Scores (Accuracy and F-Measure)
+```bash
+python3 analyze.py sentiment scores
+```
+- Text Sentiment Analysis (Web Endpoint)
+```bash
+python3 websentiment.py
+```
 ## Adding new languages
 You can add support for a new language by registering it using the `registerLanguage` method:
 
