@@ -62,7 +62,7 @@ You can start a web endpoint for the sentiment analyzer (text only) by running t
 ```bash
 python3 websentiment.py
 ```
-The terminal will show you an IP address followed by a port number that you can follow and submit your text to. Example:
+Follow your server's IP address followd by the port number showed on terminal and submit your text. Example:
 ```bash
 http://100.101.102.103:5000/?text=أنا مسرور جداً
 ```
