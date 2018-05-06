@@ -1,5 +1,6 @@
 import nltk
 nltk.download('stopwords')
+nltk.download('punkt')
 from nltk.classify import NaiveBayesClassifier
 from nltk.classify.util import accuracy
 import collections
