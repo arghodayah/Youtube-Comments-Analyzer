@@ -4,6 +4,7 @@ from flask import Response
 from flask import json
 import nltk
 nltk.download('stopwords')
+nltk.download('punkt')
 from nltk.classify import NaiveBayesClassifier
 
 app = Flask(__name__)
